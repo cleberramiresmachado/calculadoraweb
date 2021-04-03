@@ -5,6 +5,9 @@ jdk:
 - oraclejdk11
 addons:
   firefox: "60.0"
+  apt:
+    packages:
+      - dpkg  
 before_install:
 - sudo apt-get update
 - sudo apt-get install dbus-x11
