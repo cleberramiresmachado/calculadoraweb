@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 public class CalculadoraTest {
 
     @Test
-    public void testAdicionar() {
+    public void testSomar() {
         double resultado = 2;
         assertEquals(resultado, Calculadora.adicionar(1, 1));
     }
@@ -27,13 +27,13 @@ public class CalculadoraTest {
     }
 
     @Test
-    public void testDividirPositivoPorZero() {
+    public void testDividirPZero() {
         double resultado = Double.POSITIVE_INFINITY;
         assertEquals(resultado, Calculadora.dividir(3, 0));
     }
 
     @Test
-    public void testDividirNegativoPorZero() {
+    public void testDividirNZero() {
         double resultado = Double.NEGATIVE_INFINITY;
         assertEquals(resultado, Calculadora.dividir(-3, 0));
     }
