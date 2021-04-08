@@ -28,4 +28,5 @@ script:
 - git clone https://github.com/cleberramiresmachado/calculadoraweb
 - mvn clean package
 - mvn pmd:pmd
+- mvn test
 
